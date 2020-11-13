@@ -18,4 +18,5 @@
     2.启动项目
     yarn start
 # 这个下面是启动mongodb和服务端项目图片，启动本项目后的图片。
-    vue_shop\static\img
+  ![image.png](https://liuer1211.github.io/vue_shop/static/img/1.png)
+  ![image.png](https://liuer1211.github.io/vue_shop/static/img/2.png)
