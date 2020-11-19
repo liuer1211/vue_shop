@@ -6,7 +6,7 @@
 </template>
 
 <script>
-  //24
+  // 24
   import {mapActions} from 'vuex'
   import FooterGuide from './components/FooterGuide/FooterGuide'
 
