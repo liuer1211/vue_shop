@@ -11,3 +11,9 @@ export const reqAddress=(geohash)=>ajax(`${BASE_URL}/position/${geohash}`)   //p
 export const reqFoodCategorys = () => ajax(BASE_URL+'/index_category')
 // 3、根据经纬度获取商铺列表
 export const reqShops = (longitude, latitude) => ajax(BASE_URL+'/shops', {longitude, latitude})  //query
+
+
+/**
+ * 获取商家商品数组
+ */
+export const reqShopGoods = () => ajax('/goods')
