@@ -19,6 +19,9 @@
     yarn start
 # 这个下面是启动mongodb和服务端项目图片，启动本项目后的图片。
   1.本地项目启动结果
-  ![image.png](https://liuer1211.github.io/vue_shop/static/img/1.png)
-  2.数据库启动结果和服务端启动结果
-  ![image.png](https://liuer1211.github.io/vue_shop/static/img/2.png)
+  ![image.png](https://liuer1211.github.io/vue_shop/static/img/3.png)
+  ![image.png](https://liuer1211.github.io/vue_shop/static/img/6.png)
+  ![image.png](https://liuer1211.github.io/vue_shop/static/img/7.png)
+  2.服务端启动结果和数据库启动结果
+  ![image.png](https://liuer1211.github.io/vue_shop/static/img/4.png)
+  ![image.png](https://liuer1211.github.io/vue_shop/static/img/5.png)
