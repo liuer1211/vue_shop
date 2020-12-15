@@ -48,12 +48,44 @@
       <a href="javascript:" class="go_back" @click="$router.back()">
         <i class="iconfont icon-jiantou2"></i>
       </a>
+
+
+
     </div>
   </section>
 </template>
 
 <script>
+  import {mapState,mapActions} from 'vuex'
+  export default {
+    data(){
+      return {
 
+      }
+    },
+    computed:{
+      //获得数据，直接取state中的
+      ...mapState(['goods'])
+    },
+    created() {
+      // 测试mock数据
+      this.$store.dispatch('getGoods',()=>{
+        console.log('=',this.goods)
+      })
+      //
+      this.initPlay()
+    },
+    mounted() {
+      //
+    },
+    methods:{
+      ...mapActions(['getGoods']),
+      initPlay(){
+
+      },
+
+    }
+  }
 </script>
 
 <style lang="stylus" rel="stylesheet/stylus">

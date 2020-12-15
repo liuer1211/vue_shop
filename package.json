@@ -15,8 +15,12 @@
     "mockjs": "^1.1.0",
     "swiper": "^4.2.6",
     "vue": "^2.5.2",
+    "vue-player": "^1.0.2",
     "vue-router": "^3.0.1",
-    "vuex": "^3.1.1"
+    "vue-sticky-nav": "^1.2.6",
+    "vuex": "^3.1.1",
+    "xgplayer": "^2.14.4",
+    "xgplayer-vue": "^1.1.5"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",

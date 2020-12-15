@@ -157,7 +157,7 @@
     },
     computed:{
       //获得数据，直接取state中的
-      ...mapState(['address'])
+      // ...mapState(['address'])
     }
 
   }

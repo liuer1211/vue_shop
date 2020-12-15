@@ -1,8 +1,8 @@
 /*
 * 通过mutations间接更新state的多个方法的对象
 * */
-import {RECEIVE_ADDRESS,RECEIVE_CATEGORYS,RECEIVE_SHOPS} from "./mutation-types";
-import {reqAddress,reqFoodCategorys,reqShops} from '../api'
+import {RECEIVE_ADDRESS,RECEIVE_CATEGORYS,RECEIVE_SHOPS,RECEIVE_GOODS} from "./mutation-types";
+import {reqAddress,reqFoodCategorys,reqShops,reqShopGoods} from '../api'
 
 export default {
   //地址
@@ -10,15 +10,15 @@ export default {
     //console.log('...........')
     //发送异步ajax请求
     const geohash=state.latitude+','+state.longitude
-    const res=await reqAddress(geohash)
-    const result=res.data
-    //console.log('re',result)
-    //提交一个mutations
-    if(result.code===0){
-      //address  是 对应mutation方法的对象
-      const address=result.data
-      commit(RECEIVE_ADDRESS,{address})
-    }
+    // const res=await reqAddress(geohash)
+    // const result=res.data
+    // //console.log('re',result)
+    // //提交一个mutations
+    // if(result.code===0){
+    //   //address  是 对应mutation方法的对象
+    //   const address=result.data
+    //   commit(RECEIVE_ADDRESS,{address})
+    // }
   },
   //食品
   async getCategorys({commit}){
@@ -41,6 +41,19 @@ export default {
       //address  是 对应mutation方法的对象
       const shops=result.data
       commit(RECEIVE_SHOPS,{shops})
+    }
+  },
+  // 商品
+  async getGoods({commit,state},callback) {
+    const result= await reqShopGoods()
+    if (result.code === 0){
+      const goods=result.data
+      commit(RECEIVE_GOODS,{goods})
+      callback && callback()
+    } else {
+      const goods=[{name:'113'}]
+      commit(RECEIVE_GOODS,{goods})
+      callback && callback()
     }
   }
 }
