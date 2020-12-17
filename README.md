@@ -26,4 +26,4 @@
   ![image.png](https://liuer1211.github.io/vue_shop/static/img/4.png)
   ![image.png](https://liuer1211.github.io/vue_shop/static/img/5.png)
 # 访问
-   [点我访问](https://liuer1211.github.io/vue_shop/)
+   [点我访问](https://liuer1211.github.io/vue_shop/dist/#/)
