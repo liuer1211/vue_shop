@@ -26,4 +26,5 @@
   ![image.png](https://liuer1211.github.io/vue_shop/static/img/4.png)
   ![image.png](https://liuer1211.github.io/vue_shop/static/img/5.png)
 # 访问
+    在github中设置访问地址，然后即可访问，由于本项目不是纯静态项目，需要服务端支持，只能看到大概样子
    [点我访问](https://liuer1211.github.io/vue_shop/dist/#/)
