@@ -7,6 +7,8 @@
     yarn start
     3.一般访问
     http://localhost:8080/#/msite
+    4.打包
+    yarn build
 # mongodb安装
     启动
     C:\Program Files\MongoDB\Server\3.2\bin
