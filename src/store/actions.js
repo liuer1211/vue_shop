@@ -7,18 +7,30 @@ import {reqAddress,reqFoodCategorys,reqShops,reqShopGoods} from '../api'
 export default {
   //地址
   async getAddress({commit,state}){
-    //console.log('...........')
-    //发送异步ajax请求
-    const geohash=state.latitude+','+state.longitude
-    // const res=await reqAddress(geohash)
-    // const result=res.data
-    // //console.log('re',result)
-    // //提交一个mutations
-    // if(result.code===0){
-    //   //address  是 对应mutation方法的对象
-    //   const address=result.data
-    //   commit(RECEIVE_ADDRESS,{address})
-    // }
+    try {
+      // console.log('...........',commit,state)
+      //发送异步ajax请求
+      const geohash=state.latitude+','+state.longitude
+      const res=await reqAddress(geohash)
+      const result=res.data
+      //console.log('re',result)
+      //提交一个mutations
+      if(result.code===0){
+        //address  是 对应mutation方法的对象
+        const address=result.data
+        commit(RECEIVE_ADDRESS,{address})
+      }
+    } catch (e) {
+      const address = {
+        address: "北京市昌平区S337",
+        city: "北京市",
+        geohash: "40.10038,116.36867",
+        latitude: "40.10038",
+        longitude: "116.36867",
+        name: "上海浦东新区",
+      };
+      commit(RECEIVE_ADDRESS,{address});
+    }
   },
   //食品
   async getCategorys({commit}){
