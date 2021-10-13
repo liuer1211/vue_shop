@@ -37,9 +37,9 @@ export default {
     //发送异步ajax请求
     const result=await reqFoodCategorys()
     //提交一个mutations
-    if(result.code===0){
+    if(result.data.code===0){
       //category  是 对应mutation方法的对象
-      const categorys=result.data
+      const categorys=result.data.data
       commit(RECEIVE_CATEGORYS,{categorys})
     }
   },

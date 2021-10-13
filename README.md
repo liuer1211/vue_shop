@@ -41,6 +41,14 @@
     更改文件位置：config/index.js
     // assetsPublicPath: './',  // 发包
     assetsPublicPath: '/',  // 不发包
+    
+    # github 快速打开github
+    203.208.39.104 assets-cdn.github.com
+    199.96.58.157 github.global.ssl.fastly.net
 
 # 知识点
     1.获取地理位置
+    2.商品列表展示
+        2.1轮播图 
+            二维数组
+            页面加载完，在进行初始轮播 $nextTick
